@@ -1,4 +1,5 @@
 import Navbar from "../../Shared/Navbar/Navbar";
+import { Link } from "react-router-dom";
 
 const Login = () => {
 
@@ -49,6 +50,10 @@ const Login = () => {
               <button className="btn btn-primary">Login</button>
             </div>
           </form>
+		  <p className="text-center mt-4">Do not have an account?
+		      <Link className="text-blue-600 font-bold" to="/register">Register</Link>
+			  
+		  </p>
       </div>
     </div>
   );
