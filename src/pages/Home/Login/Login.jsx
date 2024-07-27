@@ -4,6 +4,10 @@ const Login = () => {
 
   const handleLogin = e =>{
 	e.preventDefault();
+	console.log(e.currentTarget);  // will render whole form's html structure
+	const form = new FormData(e.currentTarget);  // will render form data
+	console.log(form);
+	console.log(form.get('password'));  // will render the password user have set
   }
 
   return (
