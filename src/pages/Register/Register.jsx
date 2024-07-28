@@ -2,13 +2,23 @@ import Navbar from "../Shared/Navbar/Navbar";
 import { Link } from "react-router-dom";
 
 const Register = () => {
+  
+
   const handleRegister = (e) => {
     e.preventDefault();
-    console.log(e.currentTarget); // will render whole form's html structure
     const form = new FormData(e.currentTarget); // will render form data
+
+/*   console.log(e.currentTarget); // will render whole form's html structure
     console.log(form);
-    console.log(form.get("password")); // will render the password user have set
+    console.log(form.get("password")); // will render the password user have set   */
+
+    const name = form.get('name');
+    const photo = form.get('photo');
+    const email = form.get('email');
+    const password = form.get('password');
+    console.log(name,photo,email,password);
   };
+
   return (
     <div>
       <Navbar></Navbar>
