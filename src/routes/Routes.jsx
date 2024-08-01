@@ -4,6 +4,7 @@ import Root from "../layouts/Root";
 import Login from "../pages/Home/Login/Login";
 import Register from "../pages/Register/Register";
 import News from "../pages/News/News";
+import PrivateRoute from "./PrivateRoute";
 
 const routes = createBrowserRouter([
 	{
@@ -17,7 +18,7 @@ const routes = createBrowserRouter([
 		},
 		{
 			path: "/news/:id",  // dynamic route
-			element: <News></News>
+			element: <PrivateRoute><News></News></PrivateRoute>
 		},
 		{
 			path: '/login',
