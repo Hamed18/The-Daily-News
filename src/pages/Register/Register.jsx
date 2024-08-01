@@ -67,7 +67,7 @@ const Register = () => {
               </label>
               <input
                 type="email"
-				name="email"
+				        name="email"
                 placeholder="email"
                 className="input input-bordered"
                 required 

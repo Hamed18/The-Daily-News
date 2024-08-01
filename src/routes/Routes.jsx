@@ -16,7 +16,7 @@ const routes = createBrowserRouter([
 			loader: () => fetch('news.json')
 		},
 		{
-			path: "/news/:id",
+			path: "/news/:id",  // dynamic route
 			element: <News></News>
 		},
 		{
